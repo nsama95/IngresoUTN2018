@@ -1,3 +1,4 @@
+// fijarse que en los neg me da 1 y no tiene que aparecer nada//
 function Mostrar()
 {
 
