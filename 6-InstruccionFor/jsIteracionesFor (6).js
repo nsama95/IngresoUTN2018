@@ -1,12 +1,25 @@
 function Mostrar()
-{
-    for(numero=1;;numero++)
+{   var numero;
+    var contpares=0;
+    var i;
+    numero= parseInt(prompt("Ingrese un numero: "));
+    for(i=1;i<= numero;i++)
     {
-        numero=parseInt(prompt("ingrese el número de repeticiones"));
-        if (numero%2==0)
+        if (i%2==0)
         {
-            numero++;
+            contpares++;
+            console.log(i);
         }
+        /*
+        for(i=1;i<= numero;i++)
+    {
+        if (i%2==1)
+        {
+            continue;
+        }
+        contpares++;
+            console.log(i);
+        */
     }
-
+    console.log("Cantidad de numero pares: " +contpares);
 }//FIN DE LA FUNCIÓN
