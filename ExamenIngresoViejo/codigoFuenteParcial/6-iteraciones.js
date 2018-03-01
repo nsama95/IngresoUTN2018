@@ -2,13 +2,22 @@
 function Mostrar()
 {
 	var importe;
-    var mayor;
-    var menor;
+    var importe_mayor;
+    var importe_menor;
     
     for(i=1;i<=7;i++)
     {
-     importe= parseFloat(prompt("Ingrese el importe: "));
-    while(importe>0)
-
+    importe= parseFloat(prompt("Ingrese el importe: "));
+    while(importe<=0)
+    {
+    importe= parseFloat(prompt("Error.Ingrese el importe: "));
+    }
+    if(importe>importe_mayor)
+    {
+        importe_mayor=importe;
+    }
+    if(importe<importe_menor)
+        importe_menor=importe;
+    }
+    alert("La mayor venta es  "+importe_mayor+"  y la menor venta es de  " +importe_menor);
 }
-
